@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Studentio Case Study</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/hexagons.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <nav class="bg-img">
       <div class="container">
         <div class="topnav">
-          <div class="topnav-center">
-            <a href="index.html"><img src="assets/Dd-Logo.png" alt="" /></a>
-          </div>
           <a href="/about.html">About</a>
           <a href="/casestudy.html">Work</a>
-          <div class="topnav-right">
-            <a href="/resume">Resume</a>
-            <a href="/contact">Contact</a>
-          </div>
+          <a href="index.html"><img src="assets/Dd-Logo.png" alt="" /></a>
+          <a href="/resume">Resume</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
     </nav>
-    <main class="main-content">
+    <main class="main-studentio">
       <section class="case-hero">
         <h1 class="case-hero-title">Studentio</h1>
         <figure>
           <img src="assets/home-screen-desktop.png" alt="">
         </figure>
         <p class="case-hero-text"> Cloud storage for educators to upload and create documents for their classes, as well as share content with other teachers and with students’ families. </p>
-          <a data-scroll="" href="#desktopPrototype" class="button hero__cta">Desktop Mockup</a>
-          <a data-scroll="" href="#mobilePrototype" class="button hero__cta">Mobile Mockup</a>
+        <div class="case-buttons">
+          <a data-scroll="" href="#desktopPrototype" class="button-hero-cta">Desktop</a>
+          <a data-scroll="" href="#mobilePrototype" class="button-hero-cta">Mobile</a>
+        </div>
       </section>
       <nav class="sticky-nav">
         <ul class="case-nav">
-          <li>Overview</li>
-          <li>Research</li>
-          <li>Information Architecture</li>
-          <li>Wireframes and Testing</li>
-          <li>Branding</li>
-          <li>Visual Design</li>
-          <li>Key Takeaways</li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#competitive-analysis">Competitive Analysis</a></li>
+          <li><a href="#user-research">User Research</a></li>
+          <li><a href="#user-personas">User Personas</a></li>
+          <li><a href="#user-stories">User Stories</a></li>
+          <li><a href="#user-flows">User Flows</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#logo-design">Logo Design</a></li>
+          <li><a href="#visual-design">Visual Design</a></li>
+          <li><a href="#key-takeaways">Key Takeaways</a></li>
         </ul>
       </nav>
-      <section class="overview">
+      <section id="overview">
         <ul class="roles">
           <h3>Roles</h3>
           <li>UX designer</li>
@@ -88,7 +90,7 @@
           <p>I created Studentio, an education focused cloud storage service. For the MVP, I decided to focus on the interface for teachers, where they could upload, create, and organize content to share with students and families.</p>
         </div>
       </section>
-      <section class="competitive-analysis">
+      <section id="competitive-analysis">
         <h1>Competitive Analysis</h1>
         <img src="assets/Google-Drive.png" alt="">
         <img src="assets/Pinterest.png" alt="">
@@ -96,7 +98,7 @@
         <p>For my competitive analysis I focused on Google Drive, Pinterest, and Dropbox. All three had strengths that they were free to use, with Drive and Dropbox offering paid storage solutions for those that exceed the free plan. A common strength was that the platforms made documents accessible across many devices. Common weaknesses were issues dealing with security and privacy, compatibility with older programs such a MS Office, and limited free storage.</p>
         <p>A new player in this field should be able to provide security for their users, a free storage option, and cross-device compatibility.</p>
       </section>
-      <section class="user-research">
+      <section id="user-research">
         <h1>User Research</h1>
         <p>92%</p>
         <p>Use document creating and editing the most</p>
@@ -106,30 +108,34 @@
         <p>Prefer link or email sharing</p>
         <p>I crafted a survey that asked users what their needs were for cloud storage. I wanted to see what features they found essential, and which features they utilized the least. Since the client wanted collaborative features, I also asked how users preferred to collaborate, to find out what methods were most popular, and if social sharing was important to users. File uploading and document editing were the clear winners in terms of frequency of use, and social sharing and saving items found on the web were not important features with users. This research helped me narrow down the scope and focus on essential features for users: file uploading, document editing, and sharing through email and links. A niche audience identified was educators.</p>
       </section>
-      <section class="user-personas">
-        <h1>User Personas</h1>
-        <img src="assets/teacher-pic-round.png" alt="">
-        <p>Heather</p>
-        <p>Superstar Teacher</p>
-        <p>40</p>
-        <p>Female</p>
-        <p>Teacher</p>
-        <p>Falls Church, VA</p>
-        <img src="assets/parent-pic-round.png" alt="">
-        <p>Lesley</p>
-        <p>Working Mom</p>
-        <p>45</p>
-        <p>Female</p>
-        <p>Labor Lawyer</p>
-        <p>Washington, DC</p>
-        <div class="hexagon">
-        <p>"I want an efficient way to write and share lesson plans."</p>
+      <section id="user-personas">
+        <div>
+          <h1>User Personas</h1>
+          <img src="assets/teacher-pic-round.png" alt="">
+          <p>Heather</p>
+          <p>Superstar Teacher</p>
+          <p>40</p>
+          <p>Female</p>
+          <p>Teacher</p>
+          <p>Falls Church, VA</p>
+          <div class="hexagon">
+          <p>"I want an efficient way to write and share lesson plans."</p>
+          </div>
         </div>
-        <div class="hexagon">
-        <p>"I want to see what my sons are completing in school more often."</p>
+        <div class="">
+          <img src="assets/parent-pic-round.png" alt="">
+          <p>Lesley</p>
+          <p>Working Mom</p>
+          <p>45</p>
+          <p>Female</p>
+          <p>Labor Lawyer</p>
+          <p>Washington, DC</p>
+          <div class="hexagon">
+          <p>"I want to see what my sons are completing in school more often."</p>
+          </div>
         </div>
       </section>
-      <section>
+      <section id="user-stories">
         <h1>User Stories</h1>
         <p>Based on the survey, competitive analysis, and user personas, I created a list of the top high-priority user stories to include in the project.</p>
         <ol type="1">
@@ -143,12 +149,12 @@
         </ol>
         <img src="assets/user-stories.png" alt="">
       </section>
-      <section>
+      <section id="user-flows">
         <h1>User Flows</h1>
         <img src="assets/user-flow.png" alt="">
         <p>I created my user flows to meet the needs of the high priority user stories. After feedback, I made sure to include the details to the landing page, including what would happen if a user entered an incorrect password or forgot their password, and allowing for a social login such as using Facebook. I also included the modes of sharing most desired by users, email and link sharing.</p>
       </section>
-      <section>
+      <section id="wireframes">
         <h1>Wireframes</h1>
         <p>I wanted to use a format that would already be familiar to users, like Dropbox or Drive. I also wnated to keep the layout as minimal as possible, to reduce visual clutter and make it feel clean and prganized. I also wanted to keep it simple knowing that further iterations of the design would be used with young children, and I Wanted to keep navigation easy for the youngest users.</p>
         <img src="assets/Landing-page.png" alt="">
@@ -156,7 +162,7 @@
         <img src="assets/Files-blank-view-copy.png" alt="">
         <img src="assets/Document-collab.png" alt="">
       </section>
-      <section>
+      <section id="branding">
         <h1>Branding</h1>
         <p class="brand">Efficient</p>
         <p class="brand">Organized</p>
@@ -168,7 +174,7 @@
         <img src="assets/branding-images.png" alt="">
         <img src="assets/branding-buttons.png" alt="">
       </section>
-      <section>
+      <section id="logo-design">
         <h1>Logo Design</h1>
         <p>Logo progression: I wanted an active, celebratory logo that signified student growth and success. At first I focused on cloud, lightbulb and brain visualizations, but after mentor feedback and other educational technology logo research, I decided to focus on images of celebrating children and trees that signify growth. After sketching, my design continued to evolve to be more dynamic and refined.</p>
         <img src="assets/logo-sketch-3.png" alt="">
@@ -183,7 +189,7 @@
         <p>After testing my mockups, I received feedback that the logo was too small to read the details. Therefore I increased the size of the tree within the circle and thickened the stroke of the lines of the canopy of the tree.</p>
         <img src="assets/logo-final.png" alt="">
       </section>
-      <section>
+      <section id="visual-design">
         <h1>Visual Design & Iterations</h1>
         <p>Feedback on my first design was that it was outdated, and lacked high-quality finish. After researching other popular landing pages, I changed mine to be more colorful and follow best practices (second image). I submitted the new work to the DDC and Slack, and got lots of great feedback on how to improve it. The major feedback was to let the design “breathe” by adding more white space, eliminating the orange dividing line at top, reducing font and image sizes, and putting the gradient at the bottom (instead of the middle of the page) with a small section of gradient at top to tie it together.	I also changed the sign in page based on preference testing results to have a more engaging visual.</p>
         <img src="assets/00-Landing-Page.png" alt="">
@@ -198,14 +204,14 @@
         <img src="assets/Files-standards-view.png" alt="">
         <img src="assets/Files-classes-view.png" alt="">
       </section>
-      <section>
+      <section id="user-testing">
         <h1>User Testing</h1>
         <p>I conducted several user tests of my high-fidelity mockup. Overall the response was very positive. I was excited that two of the users were able to navigate easily and also understood the organizational tools. I was also appreciative of the critical feedback from a less tech-savvy teacher. It helped me to understand that not everything I take for granted as simple will be understood by all users, and that I need to be explicitly literal in the copy I use on the page. I was also intrigued by the idea that the hero image was not organized, and didn’t match with the stated product goal in the copy. Therefore in my final version, I changed terminology of the tabs to match the terminology of the district that would use the product. I also simplified the vector image on the landing page to signify the organization the product offers. After testing a few options, a new, simpler vector image won in a preference test asking users to choose the image that best represented organization and efficiency.  I also changed all the text to black based on user feedback to reduce the brightness. My final screens are below:</p>
         <img src="assets/landing-testing.png" alt="">
         <img src="assets/logo-testing.png" alt="">
         <img src="assets/testing.png" alt="">
       </section>
-      <section>
+      <section id="key-takeaways">
         <h1>Key Takeaways</h1>
         <ul style="list-style-type:disc;">
           <li>Submitting work to the DDC and getting feedback from Slack and my mentors was hugely influential on improving my design. I also loved getting the quick feedback from  preference tests to make changes to my design based on user feedback.</li>
@@ -218,7 +224,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
         <li>About</li>
         <li>Work</li>
@@ -231,5 +237,6 @@
         <a href="composeemail" target="blank"><img src="assets/Email logo.png" alt="email icon"></a>
       </div>
     </footer>
+    <script src="scroll.js"></script>
   </body>
 </html>
