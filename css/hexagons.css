@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 body {
     background: white);
@@ -11,9 +11,9 @@ body {
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
-  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   list-style-type: none;
+  padding-top: 10px;
 }
 
 .hex {
@@ -21,11 +21,15 @@ body {
   visibility:hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
+
 .hex::after{
+  border-top: solid 2.8284px #ff80c0;
+  border-right: solid 2.8284px #ff80c0;
   content:'';
   display:block;
   padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
 }
+
 .hexIn{
   position: absolute;
   width:96%;
@@ -59,9 +63,8 @@ body {
 .hex img {
   left: -100%;
   right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;;
   -webkit-transform: rotate3d(0,0,0,0deg);
       -ms-transform: rotate3d(0,0,0,0deg);
           transform: rotate3d(0,0,0,0deg);
