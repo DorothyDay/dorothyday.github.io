@@ -254,30 +254,21 @@ html {
 }
 
 .sticky-nav {
-  background: #37474F;
+  background: #ffeee2;
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-/* Only stick if you can fit */
-@media (min-height: 300px) {
-  nav ul {
-    position: sticky;
-    top: 0;
-  }
-}
-nav ul li a {
+.case-nav {
   display: flex;
   flex-direction: row;
-  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-around;
   color: white;
   text-decoration: none;
 }
-nav ul li a.current {
-  background: black;
+
+.case-nav a {
+  text-decoration: none'
 }
+/*https://css-tricks.com/sticky-smooth-active-nav/*/
 
 .topnav {
   overflow: hidden;
