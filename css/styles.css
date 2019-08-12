@@ -80,9 +80,24 @@ body {
   align-items: center;
 }
 
+.case-nav {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ffeee2;
+  text-align: center;
+  color: white;
+  font-family: 'Audrey Bold';
+  text-decoration: none;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+.case-nav li {
+  padding: 3px;
+}
+
 /* Position the navbar container inside the image */
 .container {
-  font-family: Audrey;
+  font-family: 'Audrey';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -172,11 +187,32 @@ h1 {
   font-family: 'Audrey Bold';
   font-style: normal;
   font-weight: normal;
-  font-size: 39px;
+  font-size: 49px;
   line-height: 47px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Audrey Bold';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Audrey Bold';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #FEA0C7;
 }
 
 .hero {
@@ -230,10 +266,6 @@ h1 {
   border-top: 86.60px solid #ffeee2;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .main-studentio {
   width: 100%;
   display: flex;
@@ -253,22 +285,88 @@ html {
   flex: 1;
 }
 
-.sticky-nav {
-  background: #ffeee2;
-}
-.case-nav {
+#overview {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  color: white;
+  align-items: flex-start;
+}
+
+#overview div {
+  width: 100px:
+}
+#Overview h3 {
+    border-bottom: 3px solid #FEA0C7;
+}
+
+#overview li {
+  text-align: center;
+}
+
+.prob-sol {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 325px;
+  height: 311.86px;
+  background: #FFEEE2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+
+}
+
+.problem, .solution {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#scroll {
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#15B9CF;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#ffeee2;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+/*https://css-tricks.com/sticky-smooth-active-nav/*/
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
   text-decoration: none;
 }
 
-.case-nav a {
-  text-decoration: none'
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main {
+  padding-top: 60px;
 }
-/*https://css-tricks.com/sticky-smooth-active-nav/*/
 
 .topnav {
   overflow: hidden;

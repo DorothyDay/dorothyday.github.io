@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
   </head>
   <body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
     <nav class="bg-img">
       <div class="container">
         <div class="topnav">
@@ -33,7 +34,7 @@
           <a data-scroll="" href="#mobilePrototype" class="button-hero-cta">Mobile</a>
         </div>
       </section>
-      <nav class="sticky-nav">
+      <nav id="stickynav">
         <ul class="case-nav">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#competitive-analysis">Competitive Analysis</a></li>
@@ -49,36 +50,42 @@
         </ul>
       </nav>
       <section id="overview">
-        <ul class="roles">
+        <div class="roles">
           <h3>Roles</h3>
-          <li>UX designer</li>
-          <li>UI Designer</li>
-          <li>Research</li>
-          <li>Brand Identity Creator</li>
-        </ul>
-        <ul class="deliverables">
+          <ul>
+            <li>UX designer</li>
+            <li>UI Designer</li>
+            <li>Research</li>
+            <li>Brand Identity Creator</li>
+          </ul>
+        </div>
+        <div class="deliverables">
           <h3>Deliverables</h3>
-          <li>User Surveys</li>
-          <li>Competitive Analysis</li>
-          <li>User Personas</li>
-          <li>User Stories</li>
-          <li>User Flows</li>
-          <li>Wireframes</li>
-          <li>Usability Testing</li>
-          <li>Prototypes</li>
-          <li>High Fidelity Mockups</li>
-        </ul>
-        <ul class="tools">
+          <ul>
+            <li>User Surveys</li>
+            <li>Competitive Analysis</li>
+            <li>User Personas</li>
+            <li>User Stories</li>
+            <li>User Flows</li>
+            <li>Wireframes</li>
+            <li>Usability Testing</li>
+            <li>Prototypes</li>
+            <li>High Fidelity Mockups</li>
+          </ul>
+        </div>
+        <div class="tools">
           <h3>Tools</h3>
-          <li>Google Forms</li>
-          <li>Draw.io</li>
-          <li>Whimsical</li>
-          <li>Figma</li>
-          <li>InVision</li>
-          <li>Usability Hub</li>
-          <li>Zoom</li>
-          <li>Slack</li>
-        </ul>
+          <ul>
+            <li>Google Forms</li>
+            <li>Draw.io</li>
+            <li>Whimsical</li>
+            <li>Figma</li>
+            <li>InVision</li>
+            <li>Usability Hub</li>
+            <li>Zoom</li>
+            <li>Slack</li>
+          </ul>
+        </div>
       </section>
       <section class="prob-sol">
         <div class="problem">
@@ -91,7 +98,7 @@
         </div>
       </section>
       <section id="competitive-analysis">
-        <h1>Competitive Analysis</h1>
+        <h2>Competitive Analysis</h2>
         <img src="assets/Google-Drive.png" alt="">
         <img src="assets/Pinterest.png" alt="">
         <img src="assets/Dropbox.png" alt="">
@@ -99,7 +106,7 @@
         <p>A new player in this field should be able to provide security for their users, a free storage option, and cross-device compatibility.</p>
       </section>
       <section id="user-research">
-        <h1>User Research</h1>
+        <h2>User Research</h2>
         <p>92%</p>
         <p>Use document creating and editing the most</p>
         <p>58%</p>
@@ -109,8 +116,8 @@
         <p>I crafted a survey that asked users what their needs were for cloud storage. I wanted to see what features they found essential, and which features they utilized the least. Since the client wanted collaborative features, I also asked how users preferred to collaborate, to find out what methods were most popular, and if social sharing was important to users. File uploading and document editing were the clear winners in terms of frequency of use, and social sharing and saving items found on the web were not important features with users. This research helped me narrow down the scope and focus on essential features for users: file uploading, document editing, and sharing through email and links. A niche audience identified was educators.</p>
       </section>
       <section id="user-personas">
-        <div>
-          <h1>User Personas</h1>
+        <div class="heather">
+          <h2>User Personas</h2>
           <img src="assets/teacher-pic-round.png" alt="">
           <p>Heather</p>
           <p>Superstar Teacher</p>
@@ -122,7 +129,7 @@
           <p>"I want an efficient way to write and share lesson plans."</p>
           </div>
         </div>
-        <div class="">
+        <div class="lesley">
           <img src="assets/parent-pic-round.png" alt="">
           <p>Lesley</p>
           <p>Working Mom</p>
@@ -136,7 +143,7 @@
         </div>
       </section>
       <section id="user-stories">
-        <h1>User Stories</h1>
+        <h2>User Stories</h2>
         <p>Based on the survey, competitive analysis, and user personas, I created a list of the top high-priority user stories to include in the project.</p>
         <ol type="1">
           <li>Uplaod a file</li>
@@ -150,7 +157,7 @@
         <img src="assets/user-stories.png" alt="">
       </section>
       <section id="user-flows">
-        <h1>User Flows</h1>
+        <h2>User Flows</h2>
         <img src="assets/user-flow.png" alt="">
         <p>I created my user flows to meet the needs of the high priority user stories. After feedback, I made sure to include the details to the landing page, including what would happen if a user entered an incorrect password or forgot their password, and allowing for a social login such as using Facebook. I also included the modes of sharing most desired by users, email and link sharing.</p>
       </section>
@@ -163,7 +170,7 @@
         <img src="assets/Document-collab.png" alt="">
       </section>
       <section id="branding">
-        <h1>Branding</h1>
+        <h2>Branding</h2>
         <p class="brand">Efficient</p>
         <p class="brand">Organized</p>
         <p class="brand">Celebratory</p>
@@ -175,7 +182,7 @@
         <img src="assets/branding-buttons.png" alt="">
       </section>
       <section id="logo-design">
-        <h1>Logo Design</h1>
+        <h2>Logo Design</h2>
         <p>Logo progression: I wanted an active, celebratory logo that signified student growth and success. At first I focused on cloud, lightbulb and brain visualizations, but after mentor feedback and other educational technology logo research, I decided to focus on images of celebrating children and trees that signify growth. After sketching, my design continued to evolve to be more dynamic and refined.</p>
         <img src="assets/logo-sketch-3.png" alt="">
         <img src="assets/logo-sketch-2.png" alt="">
@@ -190,7 +197,7 @@
         <img src="assets/logo-final.png" alt="">
       </section>
       <section id="visual-design">
-        <h1>Visual Design & Iterations</h1>
+        <h2>Visual Design & Iterations</h2>
         <p>Feedback on my first design was that it was outdated, and lacked high-quality finish. After researching other popular landing pages, I changed mine to be more colorful and follow best practices (second image). I submitted the new work to the DDC and Slack, and got lots of great feedback on how to improve it. The major feedback was to let the design “breathe” by adding more white space, eliminating the orange dividing line at top, reducing font and image sizes, and putting the gradient at the bottom (instead of the middle of the page) with a small section of gradient at top to tie it together.	I also changed the sign in page based on preference testing results to have a more engaging visual.</p>
         <img src="assets/00-Landing-Page.png" alt="">
         <img src="assets/01-Sign-In.png" alt="">
@@ -205,14 +212,14 @@
         <img src="assets/Files-classes-view.png" alt="">
       </section>
       <section id="user-testing">
-        <h1>User Testing</h1>
+        <h2>User Testing</h2>
         <p>I conducted several user tests of my high-fidelity mockup. Overall the response was very positive. I was excited that two of the users were able to navigate easily and also understood the organizational tools. I was also appreciative of the critical feedback from a less tech-savvy teacher. It helped me to understand that not everything I take for granted as simple will be understood by all users, and that I need to be explicitly literal in the copy I use on the page. I was also intrigued by the idea that the hero image was not organized, and didn’t match with the stated product goal in the copy. Therefore in my final version, I changed terminology of the tabs to match the terminology of the district that would use the product. I also simplified the vector image on the landing page to signify the organization the product offers. After testing a few options, a new, simpler vector image won in a preference test asking users to choose the image that best represented organization and efficiency.  I also changed all the text to black based on user feedback to reduce the brightness. My final screens are below:</p>
         <img src="assets/landing-testing.png" alt="">
         <img src="assets/logo-testing.png" alt="">
         <img src="assets/testing.png" alt="">
       </section>
       <section id="key-takeaways">
-        <h1>Key Takeaways</h1>
+        <h2>Key Takeaways</h2>
         <ol style="list-style-type:disc;">
           <li>Submitting work to the DDC and getting feedback from Slack and my mentors was hugely influential on improving my design. I also loved getting the quick feedback from  preference tests to make changes to my design based on user feedback.</li>
           <li>My weakness is visual design, so it took a lot of time, feedback, and testing to get the design to a place where I was satisfied.</li>
@@ -237,5 +244,9 @@
         <a href="composeemail" target="blank"><img src="assets/Email logo.png" alt="email icon"></a>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>
