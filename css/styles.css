@@ -65,6 +65,16 @@ body {
   margin-top: 15px;
 }
 
+.ca-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ca-images img {
+  margin: 20px;
+}
+
 .case-buttons {
   display: flex;
   flex-direction: row;
@@ -293,8 +303,9 @@ h3 {
 }
 
 #overview div {
-  width: 100px:
+  width: 30%;
 }
+
 #Overview h3 {
     border-bottom: 3px solid #FEA0C7;
 }
@@ -304,21 +315,21 @@ h3 {
 }
 
 .prob-sol {
-  margin-left: 10px;
   display: flex;
   flex-direction: row;
-  width: 325px;
-  height: 311.86px;
-  background: #FFEEE2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-
+  justify-content: space-around;
 }
 
 .problem, .solution {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin: 20px;
+  height: 311.86px;
+  width: 50%;
+  background: #FFEEE2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
 }
 
 #scroll {
@@ -393,6 +404,10 @@ h3 {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.ur-callout {
+  
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
