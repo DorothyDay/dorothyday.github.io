@@ -101,8 +101,17 @@ body {
   padding: 3px;
   margin-bottom: 20px;
 }
-.case-nav li {
+.case-nav a {
   padding: 3px;
+  font-family: 'Audrey Bold';
+  text-decoration: none;
+  color: black;
+}
+.case-nav a:hover {
+  padding: 3px;
+  font-family: 'Audrey Bold';
+  text-decoration: none;
+  color: #ffeee2;
 }
 
 /* Position the navbar container inside the image */
@@ -256,6 +265,18 @@ h3 {
   margin: 86.60px 0;
 }
 
+.hexagon p {
+  font-family: Sacramento;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: #15B9CF;
+  line-height: 40px;
+  text-align: center;
+  margin: 15px;
+}
+
 .hexagon:before,
 .hexagon:after {
   content: "";
@@ -276,9 +297,9 @@ h3 {
   border-top: 86.60px solid #ffeee2;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding: 60px 0 0 0;
+.hexagons {
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-studentio {
@@ -317,6 +338,15 @@ html {
 
 #overview li {
   text-align: center;
+}
+
+.persona {
+  display: flex;
+}
+
+.personas {
+  display: flex;
+  justify-content: space-around;
 }
 
 .prob-sol {
@@ -412,7 +442,30 @@ html {
 }
 
 .ur-callout {
+  display: flex;
+  justify-content: space-around;
+}
 
+.ur-callout div {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+
+.ur-callout h1 {
+  font-family: Sacramento;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 48px;
+  letter-spacing: 0.03em;
+  color: #15B9CF;
+}
+
+.ur-callout p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
