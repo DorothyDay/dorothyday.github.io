@@ -276,6 +276,11 @@ h3 {
   border-top: 86.60px solid #ffeee2;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 60px 0 0 0;
+}
+
 .main-studentio {
   width: 100%;
   display: flex;
@@ -407,7 +412,7 @@ h3 {
 }
 
 .ur-callout {
-  
+
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
