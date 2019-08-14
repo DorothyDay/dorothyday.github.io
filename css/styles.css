@@ -25,14 +25,6 @@
   border-radius: 3px;
 }
 
-body {
-  font-family: 'cormorant', serif;
-  font-size: 18px;
-  line-height: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
 
 .bg-img {
   /* The image used */
@@ -43,6 +35,31 @@ body {
   background-size: cover;
   /* Needed to position the navbar */
   position: relative;
+}
+
+body {
+  font-family: 'cormorant', serif;
+  font-size: 18px;
+  line-height: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.brand {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 48px;
+  line-height: 70px;
+  letter-spacing: 0.03em;
+  color: #15B9CF;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .button-hero-cta {
@@ -94,18 +111,22 @@ body {
   display: flex;
   flex-direction: row;
   border: 2px solid #ffeee2;
+  z-index: 1;
   text-align: center;
   color: white;
-  font-family: 'Audrey Bold';
+  font-family: 'Audrey Medium';
+  font-size: 12px;
   text-decoration: none;
+  text-transform: uppercase;
   padding: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .case-nav a {
   padding: 3px;
-  font-family: 'Audrey Bold';
+  font-family: 'Audrey Medium';
   text-decoration: none;
   color: black;
+  font-style:
 }
 .case-nav a:hover {
   padding: 3px;
@@ -125,6 +146,16 @@ body {
   height: 130px;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.anchor a {
+  position: absolute;
+  left: 0px;
+  top: -60px;
+}
+
+.anchor {
+  position: relative;
 }
 
 .footer {
@@ -247,7 +278,7 @@ h3 {
 }
 
 .hero-text h1 {
-  font-family: Sacramento;
+  font-family: 'Sacramento';
   font-style: normal;
   font-weight: normal;
   text-transform: capitalize;
@@ -302,6 +333,10 @@ h3 {
   justify-content: space-around;
 }
 
+.hexagons p {
+  text-indent: 0px;
+}
+
 .main-studentio {
   width: 100%;
   display: flex;
@@ -311,7 +346,7 @@ h3 {
 }
 
 .main-studentio section {
-  width: 650px;
+  max-width: 650px;
   margin-bottom: 30px;
 }
 
@@ -321,23 +356,28 @@ h3 {
   flex: 1;
 }
 
-#overview {
+.overview {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
-#overview div {
+.overview div {
   width: 30%;
 }
 
-#Overview h3 {
+.Overview h3 {
     border-bottom: 3px solid #FEA0C7;
 }
 
-#overview li {
+.overview li {
   text-align: center;
+}
+
+p {
+  text-indent: 30px;
+  margin-bottom: 15px;
 }
 
 .persona {
@@ -347,6 +387,11 @@ h3 {
 .personas {
   display: flex;
   justify-content: space-around;
+}
+
+.personas p {
+  margin-bottom: 0px;
+  text-indent: 0px;
 }
 
 .prob-sol {
@@ -407,11 +452,7 @@ h3 {
   width: 100%;
   background-color: white;
   text-decoration: none;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + main {
-  padding-top: 60px;
+  z-index: 1;
 }
 
 .topnav {
@@ -431,7 +472,7 @@ h3 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  text-decoration: underline;
   color: black;
 }
 
