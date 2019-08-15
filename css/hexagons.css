@@ -73,6 +73,7 @@ body {
 .hex h1, .hex p {
   width: 100%;
   padding: 5%;
+  text-indent: 0px;
   box-sizing:border-box;
   background-color: rgba(255, 238, 226, 1);
   font-weight: 300;
