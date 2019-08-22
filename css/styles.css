@@ -9,7 +9,7 @@
   border-radius: 3px;
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:40rem) {
   .about-content {
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ body {
   padding: .5rem;
 }
 
-@media only screen and (min-width:50rem) {
+@media only screen and (min-width:40rem) {
   .case-nav {
       display: flex;
       flex-direction: row;
@@ -251,6 +251,7 @@ h1 {
 
 h2 {
   font-family: 'Federo';
+  font-weight: normal;
   font-size: 3.9rem;
   text-align: center;
   text-transform: uppercase;
@@ -275,7 +276,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 40rem) {
   .hero {
     display: flex;
     flex-direction: row;
@@ -419,7 +420,7 @@ margin-right: auto;
     margin: .5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 77rem) {
     .topnav {
         display: flex;
         justify-content: space-between;
@@ -530,7 +531,7 @@ p {
   align-items: center;
 }
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 40rem) {
   .prob-sol {
     display: flex;
     flex-direction: row;
@@ -625,7 +626,7 @@ p {
   align-items: center;
 }
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 40rem) {
   .ur-callout {
     display: flex;
     flex-direction: row;
