@@ -60,11 +60,12 @@ body {
 }
 
 /*** HEX CONTENT **********************************************************************/
-.hex img {
+.hexLink img {
   left: -100%;
   right: -100%;
   width: 100%;
-  margin: 0 auto;;
+  vertical-align: bottom;
+  margin: 0 auto;
   -webkit-transform: rotate3d(0,0,0,0deg);
       -ms-transform: rotate3d(0,0,0,0deg);
           transform: rotate3d(0,0,0,0deg);
