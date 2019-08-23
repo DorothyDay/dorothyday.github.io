@@ -211,6 +211,10 @@ body {
   margin-left: 1.5rem;
 }
 
+.flows img {
+  align-self: center;
+  min-width: 100%;
+}
 
 .footer {
   left: 0;
@@ -626,7 +630,7 @@ p {
 }
 
 @media only screen and (min-width:40rem) {
-  .stories, .flows {
+  .stories {
     display: flex;
     flex-direction: row;
   }
@@ -691,6 +695,7 @@ p {
   .vis1, .testing {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
