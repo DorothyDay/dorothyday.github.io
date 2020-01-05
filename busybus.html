@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studentio Case Study</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Federo|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hexagons.css">
+  </head>
+  <body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <nav class="bg-img">
+        <div class="topnav">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+          <a href="index.html" class="nav-logo"><img src="assets/Dd-Logo.png" alt="Dd logo" /></a>
+          <ul class="main-nav" id="js-menu">
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="work.html" class="nav-links">Work</a></li>
+            <li><a href="assets/DDBMResume.pdf" class="nav-links">Resume</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&source=mailto&to=uxdesigndorothy@gmail.com&su=Hello!" class="nav-links">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+    <main class="container2">
+      <h1>BusyBus</h1>
+      <div class="busybus">
+        <img src="assets/busybus-prototype.png" alt="">
+      </div>
+      <div class="case-buttons">
+        <a data-scroll="" href="https://dorothyday.github.io/frontend-challenge/" class="button-hero-cta">View BusyBus</a>
+      </div
+      <p>BusyBus is a mobile application operated by the local city transit system that serves thousands of commuters.</p>
+      <p>Due to expansion, numerous bus routes have been recently added and many of those routes stop at the same bus stop. Riders want to know what the next arriving bus is and how much time they have to get to the bus stop. They are currently complaining the most about the bus stop at Washington and State, which has seven bus lines serving the stop.</p>
+      <p>I was tasked with designing a transit app that would help riders see where their bus was and when it would arrive at their station.</p>
+      <h3>Problem</h3>
+      <ol style="list-style-type:disc;">
+        <li>Too many buses at one stop</li>
+        <li>Confusion about which bus is next</li>
+        <li>No information about when the next bus will arrive</li>
+      </ol>
+      <h3>Solution</h3>
+      <p>BusyBus displays the next bus and destination according to arrival time, as well as current bus locations
+</p>
+    </main>
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/dorothy-baden-mayer" target="blank"><img src="assets/LI-logo.png" alt="linked in icon"></a>
+        <a href="https://github.com/DorothyDay" target="blank"><img src="assets/Git-logo.png" alt="github icon"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&source=mailto&to=uxdesigndorothy@gmail.com&su=Hello!" target="blank"><img src="assets/Email-logo.png" alt="email icon"></a>
+      </div>
+      <div class="copyright">
+        <p>Designed and developed by Dorothy Baden-Mayer ©2020 </p>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/8ec8e7d344.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="nav.js"></script>
+    <script src="navtoggle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFMF9TB1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0PFMF9TB1V');
+</script>
+  </body>
+</html>

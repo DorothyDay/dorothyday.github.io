@@ -38,10 +38,19 @@
   position: relative;
 }
 
-.blocjams img {
-  max-width: 70%;
-  height: auto;
+.blocjams {
+  display: grid;
+  grid-column: 1;
+  width: 80%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 0 3rem 0;
 }
+
+.blocjams img {
+  width: 100%;
+}
+
 
 body {
   font-family: 'Cormorant';
@@ -80,6 +89,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.busybus {
+  text-align: center;
+  display: block;
+}
+.busybus img {
+  width: 40%;
 }
 
 .button-hero-cta {
