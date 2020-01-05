@@ -521,6 +521,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
   max-width: 40rem;
 }
@@ -713,9 +714,14 @@ section {
   margin-bottom: 2rem;
 }
 
+.testing img {
+  max-width: 90%;
+}
+
 .vis1, .testing {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
 }
 
@@ -729,7 +735,7 @@ section {
 }
 
 .vis1 img {
-  max-width: 80%;
+  max-width: 40%;
   height: auto;
   margin: 1rem;
   align-self: flex-start;
