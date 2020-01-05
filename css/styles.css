@@ -38,6 +38,11 @@
   position: relative;
 }
 
+.blocjams img {
+  max-width: 70%;
+  height: auto;
+}
+
 body {
   font-family: 'Cormorant';
   font-style: normal;
@@ -312,7 +317,7 @@ h3 {
 
 .hero-image img {
   max-width: 80%;
-  max-height: 47rem;
+  height: auto;
 }
 
 .hero-text {
@@ -379,6 +384,7 @@ h3 {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .logos {
@@ -527,7 +533,8 @@ p {
 }
 
 .persona img {
-  max-width: 50%;
+  height: 20rem;
+  width: 20rem;
   margin: 1rem;
 }
 
