@@ -276,6 +276,10 @@ body {
   padding: 1rem;
 }
 
+.copyright {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Federo';
   font-style: normal;
@@ -333,7 +337,7 @@ h3 {
 }
 
 .hero-image img {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   object-fit: contain;
 }
