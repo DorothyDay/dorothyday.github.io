@@ -328,7 +328,6 @@ h3 {
 
 .hero-image {
   display: flex;
-  object-fit: contain;
   justify-content: center;
 }
 
