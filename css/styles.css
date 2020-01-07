@@ -53,10 +53,9 @@
 
 
 body {
-  font-family: 'Cormorant';
-  font-style: normal;
-  font-size: 1.8rem;
-  line-height: normal;
+  font-family: 'Josefin Sans';
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .brand {
@@ -80,6 +79,7 @@ body {
 
 .brandimg img {
   align-self: center;
+  margin: .8rem;
 }
 
 @media screen and (min-width: 40rem) {
@@ -106,15 +106,17 @@ body {
   border-radius: .3rem;
   width: 21.7rem;
   height: 5.397rem;
-  font-family: 'Federo';
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding: 1.5rem;
+  padding: 1.8rem;
   margin: 1rem;
+}
+
+.case-hero .case-buttons .button-hero-cta, .wireframes .case-buttons .button-hero-cta {
+  padding: .9rem
 }
 
 .ca-images {
@@ -124,7 +126,7 @@ body {
   max-width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .ca-images img {
@@ -176,10 +178,6 @@ body {
   z-index: 1;
   text-align: center;
   color: white;
-  font-family: 'Federo';
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
   padding: .5rem;
   margin: 0 auto;
 }
@@ -200,13 +198,13 @@ body {
 }
 
 .case-nav a {
-  font-family: 'Federo';
+  font-family: 'Josefin Sans';
   text-decoration: none;
   color: black;
   margin: 3px;
+  font-size: 1.6rem
 }
 .case-nav a:hover {
-  font-family: 'Federo';
   text-decoration: underline;
 }
 
@@ -281,28 +279,26 @@ body {
 }
 
 h1 {
-  font-family: 'Federo';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 4.9rem;
-  line-height: 4.7rem;
+  font-family: 'Sacramento';
+  font-size: 6.5rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 3rem 0 3rem 0;
+  color: #15B9CF;
 }
 
 h2 {
-  font-family: 'Federo';
-  font-weight: normal;
-  font-size: 3.9rem;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   margin: 1rem;
-  padding: 2rem 0 1rem 0;
+  padding: 3rem 0 1rem 0;
 }
 
 h3 {
-  font-family: 'Federo';
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 2.4rem;
@@ -312,55 +308,20 @@ h3 {
   border-bottom: .3rem solid #FEA0C7;
 }
 
+.persona h3 {
+  border-bottom: none;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
   margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 40rem) {
-  .hero {
-    display: flex;
-    flex-direction: row;
-  }
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-  }
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
-  max-width: 80%;
-  height: auto;
-  object-fit: contain;
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.hero-text h1, .hexgrid h1 {
-  font-family: 'Sacramento';
-  text-transform: capitalize;
-  font-size: 4.2rem;
-  line-height: 7rem;
-  color: #15B9CF;
-  margin: 0 auto;
-}
-
-.hero-text p {
-  font-size: 1.8rem;
-  padding: 2rem 0 2rem 0;
+.hero p {
+  padding: 2rem 0 1rem 0;
 }
 
 .hexagon {
@@ -378,10 +339,14 @@ h3 {
   font-size: 3.2rem;
   letter-spacing: 0.03em;
   color: #15B9CF;
-  line-height: 3.5rem;
+  line-height: 1rem;
   text-align: center;
   text-indent: 0px;
   margin: 1.5rem;
+}
+
+.persona .hexagon p {
+  line-height: 3rem;
 }
 
 .hexagon:before,
@@ -527,22 +492,22 @@ ol {
 .overview div {
   width: 16.3rem;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .overview h3 {
   font-size: 2rem;
   border-bottom: .3rem solid #FEA0C7;
 }
 
-.overview li {
+li {
   font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 
 p {
-  font-size: 1.8rem;
   text-indent: 3rem;
   margin-bottom: 3rem;
-  line-height: 136%;
+  line-height: 150%;
 }
 
 .persona {
@@ -569,7 +534,7 @@ p {
 
 .persona-middle {
   width: 100%;
-  height: 71rem;
+  height: 75rem;
 }
 
 .persona-middle h3 {
@@ -618,7 +583,7 @@ p {
   padding: 2rem;
   margin: 2rem;
   width: 80%;
-  height: 33rem;
+  height: 38rem;
   background: #FFEEE2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -660,7 +625,7 @@ p {
 /*https://css-tricks.com/sticky-smooth-active-nav/*/
 
 section {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -696,8 +661,8 @@ section {
 
 /* Position the navbar container inside the image */
 .topnav {
-  font-family: 'Federo';
-  font-weight: 500;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
   font-size: 2.4rem;
   width: auto;
   margin-bottom: 1rem;
@@ -764,10 +729,9 @@ section {
 }
 
 .vis1 img {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
   margin: 1rem;
-  align-self: flex-start;
 }
 
 .vis2 {
