@@ -126,12 +126,12 @@ body {
   max-width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
-  object-fit: contain;
 }
 
 .ca-images img {
   max-width: 25%;
   margin: 1rem;
+  object-fit: contain;
 }
 
 .case-buttons {
