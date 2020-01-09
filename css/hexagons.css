@@ -121,7 +121,7 @@ body {
     padding-bottom: 4.4%
   }
   .hex {
-    width: 25%; /* = 100 / 5 */
+    width: 20%; /* = 100 / 5 */
   }
   .hex:nth-child(9n+6){ /* first hexagon of even rows */
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */

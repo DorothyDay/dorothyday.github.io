@@ -55,23 +55,24 @@ body {
   font-style: normal;
   font-weight: normal;
   text-transform: capitalize;
-  font-size: 4.8rem;
+  font-size: 4.2rem;
   letter-spacing: 0.03em;
   color: #15B9CF;
-  margin: 1.5rem;
+  margin: 1rem;
   text-align: center;
+  text-indent: 0;
 }
 
 
 .brands, .brandimg {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .brandimg img {
-  align-self: center;
-  margin: .8rem;
+  margin: 0 auto;
+  padding: .5rem;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 40rem) {
@@ -175,15 +176,12 @@ body {
 
 @media only screen and (min-width:40rem) {
   .case-nav {
-      display: flex;
-      flex-direction: row;
       width: 100%;
-      justify-content: space-around;
   }
 }
 
 @media only screen and (max-width:40rem) {
-  .case-nav {
+ .full-width {
       display: none;
   }
 }
@@ -193,7 +191,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
-  padding: .9;
+  padding: .9rem;
 }
 .case-nav a:hover {
   text-decoration: underline;
@@ -202,22 +200,15 @@ body {
 .container {
   display: grid;
   grid-column: 1;
-  width: 87%;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   padding: 2rem 0 2rem 0;
 }
 
-@media only screen and (max-width: 40rem) {
-  .container {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
-
 .flows img {
   align-self: center;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .full-width {
@@ -299,6 +290,14 @@ h3 {
   padding: 1rem;
   margin-bottom: 4rem;
 }
+
+/*.hero .button-hero-cta {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}*/
 
 .hero p {
   padding: 2rem 0 1rem 0;
@@ -470,13 +469,14 @@ ol {
   width: 30%;
 }*/
 .overview div {
-  width: 16.3rem;
+  width: 20rem;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  padding: 2rem;
 }
 .overview h3 {
   font-size: 2rem;
   border-bottom: .3rem solid #FEA0C7;
+  width: 100%;
 }
 
 li {
@@ -496,7 +496,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  max-width: 40rem;
+  width: 100%;
 }
 
 .persona img {
@@ -510,11 +510,6 @@ p {
   flex-direction: row;
   align-items: center;
   width: 100%;
-}
-
-.persona-middle {
-  width: 100%;
-  height: 75rem;
 }
 
 .persona-middle h3 {
@@ -534,11 +529,10 @@ p {
   }
 }
 
-.personas p {
+.persona-top p {
+  text-indent: 0;
   margin-bottom: 0;
-  text-indent: 1rem;
 }
-
 .personas div {
   padding-bottom: 2rem;
 }
@@ -562,7 +556,7 @@ p {
   align-items: center;
   padding: 2rem;
   margin: 2rem;
-  width: 80%;
+  width: 90%;
   height: 38rem;
   background: #FFEEE2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -605,7 +599,9 @@ p {
 /*https://css-tricks.com/sticky-smooth-active-nav/*/
 
 section {
-  padding-bottom: 2rem;
+  max-width: 85%;
+  padding: 2rem 0 2rem 0;
+  margin: 0 auto;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -714,7 +710,7 @@ section {
 }
 
 .vis1 img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   margin: 1rem;
 }
@@ -752,4 +748,5 @@ section {
 .wireframe2 img {
   margin: 1rem;
   align-self: center;
+  max-width: 90%;
 }
