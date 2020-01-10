@@ -1,5 +1,5 @@
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onScroll = function() {myFunction()};
 
 // Get the navbar
 var stickynav = document.getElementById("stickynav");
