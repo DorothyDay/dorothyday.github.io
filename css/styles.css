@@ -4,7 +4,7 @@
 .about-content img {
   float: left;
   max-width: 27rem;
-  margin: 1.5rem;
+  margin: 1rem 1.5rem 1rem 0;
   box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25);
   border-radius: 3px;
 }
@@ -226,14 +226,16 @@ body {
   max-width: 100%;
 }
 
-#stickynav {
+.stickynav {
   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
+  position: sticky;
+  top: 0;
+  left: -1%;
   margin-left: -50vw;
   margin-right: -50vw;
-  height: 70px;
+  background-color: white;
+  text-decoration: none;
+  z-index: 1;
 }
 
 .footer {
@@ -623,21 +625,6 @@ section {
   max-width: 85%;
   padding: 2rem 0 2rem 0;
   margin: 0 auto;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  text-decoration: none;
-  z-index: 1;
-  left: 0%;
-  right: 0%;
-  margin-left: 0vw;
-  margin-right: 0vw;
 }
 
 .stories, .flows {
