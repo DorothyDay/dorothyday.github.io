@@ -189,7 +189,7 @@ body {
 }
 
 @media only screen and (max-width:50rem) {
- .full-width {
+ .stickynav {
       display: none;
   }
 }
